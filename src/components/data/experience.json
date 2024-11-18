@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "role": "Internship",
+    "organisation": "Salesforce",
+    "startDate": "Sept 2023 -",
+    "endDate": "Jan 2024",
+    "location": "Bangalore, India",
+    "experiences": [
+      "Worked on Apex",
+      "Worked with the Salesforce Team"
+    ],
+    "imageSrc": "company/salesforce.png"
+  },
+  {
+    "id": 2,
+    "role": "Internship",
+    "organisation": "Y-Hills",
+    "startDate": "Jun 2023 -",
+    "endDate": "Aug 2023",
+    "location": "Hydrabad, India",
+    "experiences": [
+      "Worked on Web Development",
+      "Worked on dynamic web features"
+    ],
+    "imageSrc": "company/yhh.png"
+  }
+ 
+]

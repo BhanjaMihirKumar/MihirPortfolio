@@ -1,0 +1,53 @@
+/* Bubble.css */
+.bubble {
+    position: fixed;
+    bottom: -50px; /* Start below the viewport */
+    width: 20px; /* Bubble width */
+    height: 20px; /* Bubble height */
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 40%; /* Make it round */
+    opacity: 0.7; /* Slightly transparent */
+    pointer-events: none; /* Ignore mouse events */
+    
+    /* Slow down the rise animation */
+    animation: rise 5s linear forwards; /* Increased to 25s for slower rise */
+    animation-delay: calc(0.5s * var(--i)); /* Stagger the animation */
+  }
+  
+  /* Keyframes for bubble rise */
+  @keyframes rise {
+    0% {
+      transform: translateY(0) scale(1); /* Start at original size */
+    }
+    100% {
+      transform: translateY(-100vh) scale(1.2); /* Move up by full viewport height and slightly grow */
+      opacity: 0; /* Fade out */
+    }
+  }
+  
+  /* Additional animation for floating effect */
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px); /* Move up slightly */
+    }
+    100% {
+      transform: translateY(0); /* Move back down */
+    }
+  }
+  
+  /* Optional: Add colorful background using pseudo-element */
+  .bubble:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 40%;
+    background: linear-gradient(135deg, rgba(255, 0, 0, 0.7), rgba(0, 0, 255, 0.7), rgba(0, 255, 0, 0.7));
+    animation: float 4s ease-in-out infinite; /* Floating effect */
+  }
+  

@@ -1,0 +1,19 @@
+.music-button-container {
+    position: fixed;
+    right: 10px; /* Add some padding from the left edge */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.music-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.2s;
+}
+
+.music-button:hover {
+    transform: scale(1.2); /* Slightly increase size on hover */
+}
